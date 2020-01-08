@@ -3,3 +3,4 @@
 * [Regular Maintenance](/regular-maintenance.md)
 * [Content Updates](/content-updates.md)
 * [Custom Upstreams](/custom-upstreams.md)
+* [Customizing the Theme](/customizing-the-theme.md)
