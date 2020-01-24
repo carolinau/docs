@@ -4,5 +4,8 @@
 * [Content Updates](/content-updates.md)
 * [Custom Upstreams](/custom-upstreams.md)
 * [Customizing the Theme](/customizing-the-theme.md)
-* [Entity Share](/entity-share.md)
 * [The Pantheon Workflow](/the-pantheon-workflow.md)
+* Modules
+	* [Entity Share](/entity-share.md)
+	* [Google Analytics](/google-analytics.md)
+	* [Simple XML Sitemap](/simple-xml-sitemap.md)
