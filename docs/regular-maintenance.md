@@ -32,34 +32,34 @@ When there is a module update, download the ZIP file from the Drupal.org website
 ### Updating Core
 All the custom upstream managed sites have a further upstream of Pantheon’s Drupal 8 git bucket. That is where core updates come from. To update core, run the following commands:
 ```
-$ git fetch pantheon-drops-8
-$ git merge pantheon-drops-8/master
+git fetch pantheon-drops-8
+git merge pantheon-drops-8/master
 ```
 Do not attempt to copy in the official download from Drupal’s website. This will break Pantheon workflow functionality.
 
 Provided no updates happened when running those core updates, proceed to commit the changes.
 ```
-$ git commit -m ‘Update core to latest version’
+git commit -m ‘Update core to latest version’
 ```
 Then, push the changes to the `piu-theme` bucket.
 ```
-$ git push
+git push
 ```
 ### Pulling Updates on Microsites
 *Applies to module, theme, and core updates.*
 You can run a Terminus command to automatically pull in the updates from the custom upstream and apply them to the dev environments of the respective sites. You will need the [Terminus Mass Update](https://github.com/pantheon-systems/terminus-mass-update) plugin to do so. To apply updates, run this command:
 ```
-$ terminus site:list —format=list | terminus site:mass-update:apply
+terminus site:list —format=list | terminus site:mass-update:apply
 ```
 This will apply any pending updates in the custom upstream managed site dashboards and apply them to the dev environment. Test at least one of the sites in dev and test before deploying all changes to test and then to live.
 ## Composer Managed Sites
 The composer managed sites are done this way in order to install modules with advanced features that require PHP dependencies.
 
 ### Updating Modules and Themes
-To update modules, themes, and core, `cd` into the local site directory and install updates for a specific module using this command: `$ composer update drupal/MODULE_NAME`
+To update modules, themes, and core, `cd` into the local site directory and install updates for a specific module using this command: `composer update drupal/MODULE_NAME`
 
 ### Updating Core
-Run this command `$ composer update drupal/core —with-dependencies` in the local site directory to update Drupal Core. Once this is done, commit the changes and push to the dev environment.
+Run this command `composer update drupal/core —with-dependencies` in the local site directory to update Drupal Core. Once this is done, commit the changes and push to the dev environment.
 
 ### Updating Dependencies
-Simply run `$ composer update` and composer will check for any PHP dependencies that need updating and automatically proceed to update them. Following this step, commit the changes and push them to the dev environment.
+Simply run `composer update` and composer will check for any PHP dependencies that need updating and automatically proceed to update them. Following this step, commit the changes and push them to the dev environment.
