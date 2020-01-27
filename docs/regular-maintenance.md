@@ -52,6 +52,47 @@ You can run a Terminus command to automatically pull in the updates from the cus
 terminus site:list --format=list | terminus site:mass-update:apply
 ```
 This will apply any pending updates in the custom upstream managed site dashboards and apply them to the dev environment. Test at least one of the sites in dev and test before deploying all changes to test and then to live.
+
+To pull updates from Dev to Test, run these commands for each site:
+```
+terminus env:deploy e4.test --cc
+```
+```
+terminus env:deploy john-wesley-school-of-leadership.test --cc
+```
+```
+terminus env:deploy moore-school-of-education.test --cc
+```
+```
+terminus env:deploy patterson-school-of-business.test --cc
+```
+```
+terminus env:deploy school-of-arts-and-sciences.test --cc
+```
+```
+terminus env:deploy temple-baptist-seminary.test --cc
+```
+
+To pull updates from Test to Live, run these commands for each site:
+```
+terminus env:deploy e4.live --cc
+```
+```
+terminus env:deploy john-wesley-school-of-leadership.live --cc
+```
+```
+terminus env:deploy moore-school-of-education.live --cc
+```
+```
+terminus env:deploy patterson-school-of-business.live --cc
+```
+```
+terminus env:deploy school-of-arts-and-sciences.live --cc
+```
+```
+terminus env:deploy temple-baptist-seminary.live --cc
+```
+
 ## Composer Managed Sites
 The composer managed sites are done this way in order to install modules with advanced features that require PHP dependencies.
 
