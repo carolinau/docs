@@ -49,7 +49,7 @@ git push
 *Applies to module, theme, and core updates.*
 You can run a Terminus command to automatically pull in the updates from the custom upstream and apply them to the dev environments of the respective sites. You will need the [Terminus Mass Update](https://github.com/pantheon-systems/terminus-mass-update) plugin to do so. To apply updates, run this command:
 ```
-terminus site:list —format=list | terminus site:mass-update:apply
+terminus site:list -—format=list | terminus site:mass-update:apply
 ```
 This will apply any pending updates in the custom upstream managed site dashboards and apply them to the dev environment. Test at least one of the sites in dev and test before deploying all changes to test and then to live.
 ## Composer Managed Sites
