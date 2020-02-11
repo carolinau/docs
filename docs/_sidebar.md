@@ -7,6 +7,7 @@
 * [Customizing the Theme](/customizing-the-theme.md)
 * [The Pantheon Workflow](/the-pantheon-workflow.md)
 * Modules
+	* [Collapse Text](/collapse-text.md)
 	* [Entity Share](/entity-share.md)
 	* [Google Analytics](/google-analytics.md)
 	* [Simple XML Sitemap](/simple-xml-sitemap.md)
