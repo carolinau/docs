@@ -13,3 +13,4 @@
 	* [Entity Share](/entity-share.md)
 	* [Google Analytics](/google-analytics.md)
 	* [Simple XML Sitemap](/simple-xml-sitemap.md)
+- [Terms](/terms.md)
