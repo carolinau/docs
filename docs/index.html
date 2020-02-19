@@ -18,7 +18,20 @@
       subMaxLevel: 2,
       themeColor: '#102648',
       ga: 'UA-3216907-15',
+      plugins: [
+    function(hook) {
+      var footer = [
+        '<hr/>',
+        '<footer>',
+        '<span>&copy; 2020 Piedmont International University</span>',
+        '</footer>'
+      ].join('');
 
+      hook.afterEach(function(html) {
+        return html + footer;
+      });
+    }
+  ]
       search: 'auto', // default
 
       // complete configuration parameters
