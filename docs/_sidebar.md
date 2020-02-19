@@ -1,5 +1,5 @@
 * [Home](/)
-* [Design Principles](design-principles.md)
+* [Design Principles](/design-principles.md)
 * [Regular Maintenance](/regular-maintenance.md)
 * [Content Updates](/content-updates.md)
 	*  [Updating Catalogs](/updating-catalogs.md)
