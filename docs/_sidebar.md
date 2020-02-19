@@ -4,6 +4,7 @@
 	* [Updating Catalogs](/updating-catalogs.md)
 * [Content Updates](/content-updates.md)
 * [Custom Upstreams](/custom-upstreams.md)
+* [Introduction to Git](/introduction-to-git.md)
 * [Composer](/composer.md)
 * [Customizing the Theme](/customizing-the-theme.md)
 * [The Pantheon Workflow](/the-pantheon-workflow.md)

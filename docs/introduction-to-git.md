@@ -15,6 +15,7 @@ For all the Drupal sites on Pantheon, follow these steps.
 1. Sign into the Pantheon site dashboard and navigate to the desired site
 2. Locate the **Clone with Git** button and copy the command in the box
 3. Navigate to your desired directory in Terminal and run the command
+
 !> You must have your development machine configured with an SSH key in order for this to work. Refer to the [Pantheon documentation](https://pantheon.io/docs/ssh-keys) for instructions.
 
 ## Typical Workflow
