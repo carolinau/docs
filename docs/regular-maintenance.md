@@ -27,10 +27,7 @@ All changes made to the custom upstream should not be done in an individual site
 
 To clone the `piu-theme` locally, navigate to the [piedmontiu/piu-theme](https://github.com/piedmontiu/piu-theme) GitHub repository and select the Clone button to clone it to your local machine.
 
-Once it has been cloned, navigate to the `piu-theme` directory. You’ll need to add Pantheon’s Upstream as a [remote](https://git-scm.com/docs/git-remote) in order to pull in core Drupal updates to the custom upstream repository. To check if it has already been added, simply run
-```
-git remote
-```
+Once it has been cloned, navigate to the `piu-theme` directory. You’ll need to add Pantheon’s Upstream as a [remote](https://git-scm.com/docs/git-remote) in order to pull in core Drupal updates to the custom upstream repository. To check if it has already been added, simply run `git remote` in Terminal.
 
 If the Pantheon remote has not been added, only `origin` will return. If that is the case, run this command to add Pantheon as a remote:
 
@@ -38,10 +35,7 @@ If the Pantheon remote has not been added, only `origin` will return. If that is
 git remote add pantheon-drops-8 git://github.com/pantheon-systems/drops-8.git
 ```
 
-You can check to see that it worked by again running
-```
-git remote
-```
+You can check to see that it worked by again running `git remote`.
 
 This time, you’ll see:
 ```
@@ -66,10 +60,8 @@ Provided no updates happened when running those core updates, proceed to commit 
 ```
 git commit -m ‘Update core to latest version’
 ```
-Then, push the changes to the `piu-theme` bucket.
-```
-git push
-```
+Then, push the changes to the `piu-theme` bucket using `git push`
+
 ### Pulling Updates on Microsites
 *Applies to module, theme, and core updates.*
 You can run a Terminus command to automatically pull in the updates from the custom upstream and apply them to the dev environments of the respective sites. You will need the [Terminus Mass Update](https://github.com/pantheon-systems/terminus-mass-update) plugin to do so. To apply updates, run this command:
@@ -80,7 +72,7 @@ This will apply any pending updates in the custom upstream managed site dashboar
 ## Terminus Quick Commands
 ### Deploy from Dev to Test
 ```
-terminus: env:deploy piedmont-international-university.test --cc
+terminus env:deploy piedmont-international-university.test --cc
 ```
 ```
 terminus env:deploy e4.test --cc
@@ -103,7 +95,7 @@ terminus env:deploy temple-baptist-seminary.test --cc
 
 ### Deploy from Test to Live
 ```
-terminus: env:deploy piedmont-international-university.live --cc
+terminus env:deploy piedmont-international-university.live --cc
 ```
 ```
 terminus env:deploy e4.live --cc
@@ -134,8 +126,5 @@ The composer managed sites are done this way in order to install modules with ad
 ### Updating Modules and Themes
 To update modules, themes, and core, `cd` into the local site directory and install updates for a specific module using this command: `composer update drupal/MODULE_NAME`
 
-### Updating Core
-Run this command `composer update drupal/core —with-dependencies` in the local site directory to update Drupal Core. Once this is done, commit the changes and push to the dev environment.
-
-### Updating Dependencies
-Simply run `composer update` and composer will check for any PHP dependencies that need updating and automatically proceed to update them. Following this step, commit the changes and push them to the dev environment.
+### Updating Core and Dependencies
+Simply run `composer update` and composer will check for any Drupal Core updates and any PHP dependencies that need updating and automatically proceed to update them. Following this step, commit the changes and push them to the dev environment.
