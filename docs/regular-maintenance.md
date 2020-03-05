@@ -24,6 +24,31 @@ To get started managing any site, you will need to clone it to your development 
 
 ## Custom Upstream Managed Sites
 All changes made to the custom upstream should not be done in an individual site. Rather, they should be performed in `piu-theme`.
+
+To clone the `piu-theme` locally, navigate to the [piedmontiu/piu-theme](https://github.com/piedmontiu/piu-theme) GitHub repository and select the Clone button to clone it to your local machine.
+
+Once it has been cloned, navigate to the `piu-theme` directory. You’ll need to add Pantheon’s Upstream as a [remote](https://git-scm.com/docs/git-remote) in order to pull in core Drupal updates to the custom upstream repository. To check if it has already been added, simply run
+```
+git remote
+```
+
+If the Pantheon remote has not been added, only `origin` will return. If that is the case, run this command to add Pantheon as a remote:
+
+```
+git remote add pantheon-drops-8 git://github.com/pantheon-systems/drops-8.git
+```
+
+You can check to see that it worked by again running
+```
+git remote
+```
+
+This time, you’ll see:
+```
+origin
+pantheon-drops-8
+```
+
 ### Updating Modules and Themes
 To get started with updating modules and themes on custom upstream managed sites you will need to have cloned the `piu-theme`  locally to your development environment. All module and theme updates should be made to this git repo instead of the individual sites. Making changes to this repo will allow all the microsites to pull from the same codebase.
 
@@ -55,6 +80,9 @@ This will apply any pending updates in the custom upstream managed site dashboar
 ## Terminus Quick Commands
 ### Deploy from Dev to Test
 ```
+terminus: env:deploy piedmont-international-university.test --cc
+```
+```
 terminus env:deploy e4.test --cc
 ```
 ```
@@ -74,6 +102,9 @@ terminus env:deploy temple-baptist-seminary.test --cc
 ```
 
 ### Deploy from Test to Live
+```
+terminus: env:deploy piedmont-international-university.live --cc
+```
 ```
 terminus env:deploy e4.live --cc
 ```
