@@ -1,10 +1,10 @@
 # Composer
-?> Applies to piedmontu.edu, dashboard.piedmontu.edu
+?> Applies to piedmontu.edu
 
 >  [Composer](https://getcomposer.org/)  is a tool for dependency management in PHP. It allows you to declare the libraries your project depends on and it will manage (install/update) them for you. Drupal uses Composer to manage the various libraries that it depends on. Modules can also use Composer to include 3rd party libraries. Drupal site builds can use Composer to manage the various modules the site is composed of.  
 
 Due to necessary complexity on both websites (for example, Solr search), Composer is a necessary tool to use for installing and upgrading modules, themes, core, and any third party dependencies. Composer is exclusively a command line tool.
-![](composer/Screen%20Shot%202020-02-19%20at%208.51.43%20AM%204.png)
+![](composer/Screen%20Shot%202020-02-19%20at%208.51.43%20AM.png)
 *Terminal running Composer*
 
 You do not need to have an extensive knowledge of Composer nor of command line tools in order to use Composer. All the commands you will need to know for a standard module or core update can be found in the [Regular Maintenance](/regular-maintenance?id=composer-managed-sites) section of these docs.

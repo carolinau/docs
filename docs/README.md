@@ -9,7 +9,6 @@ The Piedmont International University websites are built using Drupal 8 running 
 - [leadership.piedmontu.edu](https://leadership.piedmontu.edu)
 - [education.piedmontu.edu](https://education.piedmontu.edu)
 - [business.piedmontu.edu](https://business.piedmontu.edu)
-- [dashboard.piedmontu.edu](https://dashboard.piedmontu.edu)
 - [sas.piedmontu.edu](https://sas.piedmontu.edu)
 - [seminary.piedmontu.edu](https://seminary.piedmontu.edu)
 

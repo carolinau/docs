@@ -3,13 +3,12 @@ Regular maintenance is very important. Updating modules, themes, dependencies, a
 - Custom upstream managed sites
 	- [e4.piedmontu.edu](https://e4.piedmontu.edu)
 	- [leadership.piedmontu.edu](https://leadership.piedmontu.edu)
-	-  [education.piedmontu.edu](https://education.piedmontu.edu)
+	- [education.piedmontu.edu](https://education.piedmontu.edu)
 	- [business.piedmontu.edu](https://business.piedmontu.edu)
 	- [sas.piedmontu.edu](https://sas.piedmontu.edu)
 	- [seminary.piedmontu.edu](https://seminary.piedmontu.edu)
 - Composer managed sites
 	- [piedmontu.edu](https://piedmontu.edu)
-	- [dashboard.piedmontu.edu](https://dashboard.piedmontu.edu)
 
 ## Required Tools
 In order to do updates on the sites, you will need to have the following tools installed on your local development environment:
