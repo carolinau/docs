@@ -12,7 +12,16 @@ The Piedmont International University websites are built using Drupal 8 running 
 - [sas.piedmontu.edu](https://sas.piedmontu.edu)
 - [seminary.piedmontu.edu](https://seminary.piedmontu.edu)
 
-The webmaster, CFO, and CIO all hold full admin access to the Pantheon hosting account. 
+The webmaster, CFO, and CIO all hold full admin access to the Pantheon hosting account.
+
+## Other Sites
+- [library.piedmontu.edu](https://library.piedmontu.edu)
+- [news.piedmontu.edu](https://news.piedmontu.edu)
+- [mergers.piedmontu.edu](https://mergers.piedmontu.edu)
+- [piubruins.com](https://piubruins.com)
+- [piubruinsclub.com](https://piubruinsclub.com)
+- [my.piedmontu.edu](https://my.piedmontu.edu)
+- [alex.piedmontu.edu](https://alex.piedmontu.edu)
 
 ## Site Structure
 > Microsite: a school-specific site containing programs, program courses, courses, and school faculty.  
