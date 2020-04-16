@@ -126,4 +126,4 @@ The composer managed sites are done this way in order to install modules with ad
 To update modules, themes, and core, `cd` into the local site directory and install updates for a specific module using this command: `composer update drupal/MODULE_NAME`
 
 ### Updating Core and Dependencies
-Simply run `composer update` and composer will check for any Drupal Core updates and any PHP dependencies that need updating and automatically proceed to update them. Following this step, commit the changes and push them to the dev environment.
+Simply run `composer update drupal/core --with-dependencies` and composer will check for any Drupal Core updates and any PHP dependencies that need updating and automatically proceed to update them. Following this step, commit the changes and push them to the dev environment.
