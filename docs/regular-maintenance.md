@@ -115,8 +115,30 @@ terminus env:deploy school-of-arts-and-sciences.live --cc
 terminus env:deploy temple-baptist-seminary.live --cc
 ```
 ### Clear Cache
+
+The clear cache Terminus command follows the pattern of
+`terminus env:clear-cache $site.$environment`
+
 ```
-terminus env:clear-cache $site.dev
+terminus env:clear-cache piedmont-international-university.live
+```
+```
+terminus env:clear-cache e4.live
+```
+```
+terminus env:clear-cache john-wesley-school-of-leadership.live
+```
+```
+terminus env:clear-cache moore-school-of-education.live
+```
+```
+terminus env:clear-cache patterson-school-of-business.live
+```
+```
+terminus env:clear-cache school-of-arts-and-sciences.live
+```
+```
+terminus env:clear-cache temple-baptist-seminary.live
 ```
 
 ## Composer Managed Sites
