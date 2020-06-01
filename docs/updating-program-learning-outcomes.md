@@ -31,7 +31,7 @@ For the operation, make sure *Import* is selected. Then, expand the *Additional 
 Then, click the *Execute* button and keep the screen open while the migration runs (typically takes 2-4 minutes). Once finished, verify that everything imported correctly.
 
 ## Assigning a PLO to a Program
-When adding/modifying programs, program learning outcomes will need to be associated with a given program by their major code. Use the following table to locate the desired major code based on the major name which is entered into the **Program Learning Outcomes**field in the Drupal UI.
+When adding/modifying programs, program learning outcomes will need to be associated with a given program by their major code. Use the following table to locate the desired major code (based on the major name) which is entered into the **Program Learning Outcomes** field in the Drupal UI.
 
 | Major Code | Major Name |
 |-|-|
