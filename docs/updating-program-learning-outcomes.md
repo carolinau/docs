@@ -34,72 +34,97 @@ Then, click the *Execute* button and keep the screen open while the migration ru
 ## Assigning a PLO to a Program
 When adding/modifying programs, program learning outcomes will need to be associated with a given program by their major code. Use the following table to locate the desired major code (based on the major name) which is entered into the **Program Learning Outcomes** field in the Drupal UI.
 
-| Major Code | Major Name |
-|-|-|
-| MGBE | Management & Business Ethics |
-| BBED | Biblical Education |
-| BCM | Ministry |
-| BICM | Bible (Christian Ministry Emphasis MDIV) |
-| MUED | Music Education |
-| MUSI | Music |
-| BIPE | Biblical Studies (Pastoral Studies Emphasis MDIV) |
-| BIST | Biblical Studies |
-| BSM | Bible (Selected Minor) |
-| CMUS | Church Music |
-| REST | Religious Studies |
-| ELEM | Elementary Education |
-| ELWM | Elementary Education with Missions Emphasis |
-| MAMN | Ministry |
-| MABS | Biblical Studies |
-| DSCS | Deaf Studies - Deaf Community Services |
-| DSSL | Deaf Studies - Sign Language Interpreting |
-| DMIN | Doctor of Ministry |
-| MDIV | Master of Divinity |
-| PHDL | Leadership |
-| PHDB | Biblical Studies |
-| ITDS | Interdisciplinary Studies |
-| LEAD | Leadership |
-| CBSM | Certificate in Biblical Studies |
-| AMIN | Ministries (AA) |
-| BMIN | Ministry (Double Minor) |
-| APMD | Accelerated MDIV - Pastoral Studies |
-| ACMD | Accelerated MDIV - Church Ministry |
-| JCMC | Christian Ministries-Counseling-JWU Teach-Out |
-| JCFM | Christian Ministries-Family Ministry-JWU Teach-Out |
-| JCPM | Christian Ministries-Past. Ministry-JWU Teach-Out |
-| JCWA | Christian Ministries-Worship Arts-JWU Teach-Out |
-| TBBY | BA Bible (TTU) Youth Ministry |
-| INDS | Interdisciplinary Studies |
-| MBEX | Bible Exposition |
-| CBWA | Adv Certificate Biblical Worldview |
-| CBWB | Basic Certificate Biblical Worldview |
-| CNTG | Certificate of New Testament & Greek |
-| COTH | Certificate of Old Testament & Hebrew |
-| MBIS | Master of Arts in Biblical Studies |
-| BBAD | Business Administration |
-| BBAM | Business Administration w/ Minor |
-| AABI | Bible (AA) |
-| AECE | Early Childhood Education |
-| BACM | BA Christian Ministry |
-| BBSM | Bible w/ Selected Minor |
-| BSHP | BS Health & Physical Education |
-| BSSE | BS Secondary English Education |
-| MBAD | Master of Business Administration |
-| BACJ | BA Criminal Justice |
-| MOED | Master of Education |
-| SLIB | Sign Language Interpreting - Track 2 |
-| SLIA | Sign Language Interpreting - Track 1 |
-| PHDP | Leadership Prep |
-| BSNU | Nursing |
-| MSNU | Nursing |
-| SOCI | Sociology |
-| BAPS | Psychology |
-| BSPS | Psychology |
-| BSPH | Public Health |
-| MACO | Counseling |
-| MODS | Data Science |
-| MOFP | Financial Planning |
-| MSPH | Public Health |
-| BBES | Esports |
-| BSES | Esports |
-| BINS | Information Systems |
+|  Major Code |  Major Description |  Degree Code/Minor |
+|---|---|---|
+|AABI |Bible (AA)|AA |
+|ACMD |Accelerated MDIV - Church Ministry|MINOR|
+|AECE |Early Childhood Education|AA |
+|AMIN |Ministries (AA)|AA |
+|APMD |Accelerated MDIV - Pastoral Studies|MINOR|
+|ASLN |American Sign Language|MINOR|
+|BACJ |BA Criminal Justice|BA |
+|BACM |BA Christian Ministry|BA |
+|BAPS |Psychology|BA |
+|BBAD |Business Administration|BBA|
+|BBAM |Business Administration w/ Minor|BBA|
+|BBED |Biblical Education|MINOR|
+|BBES |Esports|BBA|
+|BBSM |Bible w/ Selected Minor|BA |
+|BCM  |Ministry|BA |
+|BICM |Bible (Christian Ministry Emphasis MDIV)|MINOR|
+|BILA |Biblical Languages|MINOR|
+|BINS |Information Systems|BS |
+|BIPE |Biblical Studies (Pastoral Studies Emphasis MDIV)|MINOR|
+|BIST |Biblical Studies|BA |
+|BMIN |Ministry (Double Minor)|BA |
+|BSES |Esports|BA |
+|BSHP |BS Health & Physical Education|BS |
+|BSM  |Bible (Selected Minor)|BA |
+|BSNU |Nursing|BS |
+|BSPH |Public Health|BS |
+|BSPS |Psychology|BS |
+|BSSE |BS Secondary English Education|BS |
+|CBSM |Certificate in Biblical Studies|MINOR|
+|CBWA |Adv Certificate Biblical Worldview|ND |
+|CBWB |Basic Certificate Biblical Worldview|ND |
+|CED  |Church Education|MINOR|
+|CHM  |Children's Ministry|MINOR|
+|CJUM |Criminal Justice|MINOR|
+|CMUS |Church Music|BA |
+|CNTG |Certificate of New Testament & Greek|ND |
+|COTH |Certificate of Old Testament & Hebrew|ND |
+|COUN |Counseling|MINOR|
+|CREC |Coaching and Recreation|MINOR|
+|DMIN |Doctor of Ministry|DMIN|
+|DSCS |Deaf Studies - Deaf Community Services|BS |
+|DSSL |Deaf Studies - Sign Language Interpreting|BS |
+|ELEM |Elementary Education|BS |
+|ELWM |Elementary Education with Missions Emphasis|BS |
+|ENGN |English|MINOR|
+|EXPB |Expanded Bible|MINOR|
+|GMN  |General Ministry|MINOR|
+|GMN2 |General Ministry 1|MINOR|
+|HIS  |History|MINOR|
+|HUMN |Humanities|MINOR|
+|INDS |Interdisciplinary Studies|BA |
+|INTS |Intercultural Studies|MINOR|
+|ISRS |Israel Studies|MINOR|
+|ITDS |Interdisciplinary Studies|MINOR|
+|JCFM |Christian Ministries-Family Ministry-JWU Teach-Out|MINOR|
+|JCMC |Christian Ministries-Counseling-JWU Teach-Out|MINOR|
+|JCPM |Christian Ministries-Past. Ministry-JWU Teach-Out|MINOR|
+|JCWA |Christian Ministries-Worship Arts-JWU Teach-Out|MINOR|
+|LEAD |Leadership|MA |
+|MABS |Biblical Studies|MA |
+|MACO |Counseling|MA |
+|MAMN |Ministry|MA |
+|MBAD |Master of Business Administration|MBA|
+|MBEX |Bible Exposition|MA |
+|MBIS |Master of Arts in Biblical Studies|MA |
+|MDIV |Master of Divinity|MDIV|
+|MFNP |Management for Nonprofits|MINOR|
+|MGBE |Management & Business Ethics|BA |
+|MISS |Missions|MINOR|
+|MODS |Data Science|MS |
+|MOED |Master of Education|MOED|
+|MOFP |Financial Planning|MS |
+|MSNU |Nursing|MS |
+|MSPH |Public Health|MS |
+|MUED |Music Education|BS |
+|MUS  |Music|MINOR|
+|MUSI |Music|BA |
+|NACP |North American Church Planting|MINOR|
+|PAS  |Pastoral Studies|MINOR|
+|PHDB |Biblical Studies|PHDB|
+|PHDL |Leadership|MINOR|
+|PHDP |Leadership Prep|MINOR|
+|REST |Religious Studies|AA |
+|SCBE |Secondary Bible Education|MINOR|
+|SLIA |Sign Language Interpreting - Track 1|BS |
+|SLIB |Sign Language Interpreting - Track 2|BS |
+|SM   |Student Ministry|MINOR|
+|SOCI |Sociology|BA |
+|SPMG |Sports Management|MINOR|
+|TBBY |BA Bible (TTU) Youth Ministry|MINOR|
+|WART |Worship Arts|MINOR|
+|WL   |Worship Leadership|MINOR|
