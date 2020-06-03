@@ -8,10 +8,11 @@ Run the following SQL SELECT statement on the primary Jenzabar database to get t
 ```
 SELECT p1.MAJOR_CDE,
 LTRIM((SELECT STUFF((SELECT  '| ' + p2.PLO_DESC
-	FROM PIU_PROGRAM_LEARNING_OUTCOMES p2 WHERE p2.MAJOR_CDE=p1.MAJOR_CDE
-	FOR XML PATH('')), 1, 1, ''))) AS PLO_DESC
-	FROM PIU_PROGRAM_LEARNING_OUTCOMES p1
-	GROUP BY MAJOR_CDE
+    FROM PIU_PROGRAM_LEARNING_OUTCOMES p2
+	WHERE p2.MAJOR_CDE=p1.MAJOR_CDE and p2.PLO_STS='A'
+    FOR XML PATH('')), 1, 1, ''))) AS PLO_DESC
+    FROM PIU_PROGRAM_LEARNING_OUTCOMES p1
+    GROUP BY MAJOR_CDE
 ```
 
 Select all the contents, right click and select “Save Results As…” and save the file as `plo.csv`
