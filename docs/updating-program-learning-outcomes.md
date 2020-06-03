@@ -128,3 +128,7 @@ When adding/modifying programs, program learning outcomes will need to be associ
 |TBBY |BA Bible (TTU) Youth Ministry|MINOR|
 |WART |Worship Arts|MINOR|
 |WL   |Worship Leadership|MINOR|
+
+
+Update this table by running the following query in SQL:
+`SELECT MAJOR_CDE, MAJOR_MINOR_DESC, CASE WHEN DEGR_CDE IS NULL THEN ‘MINOR’ ELSE DEGR_CDE END FROM MAJOR_MINOR_DEF WHERE MAJOR_MINOR_INTRNL=‘Y’`
