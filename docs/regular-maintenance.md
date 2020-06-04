@@ -130,6 +130,9 @@ The clear cache Terminus command follows the pattern of
 terminus env:clear-cache piedmont-international-university.live
 ```
 ```
+terminus env:clear-cache piu-catalog.live
+```
+```
 terminus env:clear-cache e4.live
 ```
 ```
