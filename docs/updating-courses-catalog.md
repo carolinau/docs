@@ -22,7 +22,7 @@ Open your desired FTP client, such as [FileZilla](https://filezilla-project.org/
 In the remote directory, navigate to `files > csv`. Upload the new *catalog_master.csv* from your machine to the server, making sure to overwrite the file on the server.
 
 ### Run Migration
-In the Drupal Admin UI, navigate to [Manage > Structure > Migrations.](https://catalog.piedmontu.edu/admin/structure/migrate) Click on *List migrations* within the *Courses* migration group. Select *Execute* within the *Import courses* migration task.
+In the Drupal Admin UI, navigate to [Manage > Structure > Migrations](https://catalog.piedmontu.edu/admin/structure/migrate). Click on *List migrations* within the *Courses* migration group. Select *Execute* within the *Import courses* migration task.
 
 For the operation, make sure *Import* is selected. Then, expand the *Additional Execution Options* section and check the *Update* box to update all previously-imported content as well as add new content.
 
