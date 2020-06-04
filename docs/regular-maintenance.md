@@ -9,6 +9,7 @@ Regular maintenance is very important. Updating modules, themes, dependencies, a
 	- [seminary.piedmontu.edu](https://seminary.piedmontu.edu)
 - Composer managed sites
 	- [piedmontu.edu](https://piedmontu.edu)
+	- [catalog.piedmontu.edu](https://catalog.piedmontu.edu)
 
 ## Required Tools
 In order to do updates on the sites, you will need to have the following tools installed on your local development environment:
@@ -74,6 +75,9 @@ This will apply any pending updates in the custom upstream managed site dashboar
 terminus env:deploy piedmont-international-university.test --cc
 ```
 ```
+terminus env:deploy piu-catalog.test --cc
+```
+```
 terminus env:deploy e4.test --cc
 ```
 ```
@@ -95,6 +99,9 @@ terminus env:deploy temple-baptist-seminary.test --cc
 ### Deploy from Test to Live
 ```
 terminus env:deploy piedmont-international-university.live --cc
+```
+```
+terminus env:deploy piu-catalog.live --cc
 ```
 ```
 terminus env:deploy e4.live --cc
@@ -142,7 +149,7 @@ terminus env:clear-cache temple-baptist-seminary.live
 ```
 
 ## Composer Managed Sites
-The composer managed sites are done this way in order to install modules with advanced features that require PHP dependencies.
+Certain sites are managed with Composer in order to install modules with advanced features that require PHP dependencies.
 
 ### Updating Modules and Themes
 To update modules, themes, and core, `cd` into the local site directory and install updates for a specific module using this command: `composer update drupal/MODULE_NAME`

@@ -5,6 +5,7 @@
 The Piedmont International University websites are built using Drupal 8 running on Pantheon hosting. The Pantheon hosting account comprises of the following sites:
 
 - [piedmontu.edu](https://piedmontu.edu)
+- [catalog.piedmontu.edu](https://catalog.piedmontu.edu)
 - [e4.piedmontu.edu](https://e4.piedmontu.edu)
 - [leadership.piedmontu.edu](https://leadership.piedmontu.edu)
 - [education.piedmontu.edu](https://education.piedmontu.edu)
