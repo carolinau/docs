@@ -22,6 +22,7 @@
 	* [Regular Maintenance](/regular-maintenance.md)
 	* [Introduction to Git](/introduction-to-git.md)
 	* [Composer](/composer.md)
+		* [Lato on DOMPDF](/lato-on-dompdf.md)
 	* [Custom Upstreams](/custom-upstreams.md)
 	* [SSH Keys](/ssh-keys.md)
 - - - -
