@@ -3,7 +3,6 @@
 * [Home](/)
 - Content
 	* [Content Updates](/content-updates.md)
-	* [Updating Catalogs](/updating-catalogs.md)
 	* [Updating Courses from J1 Catalog](/updating-courses-catalog.md)
 	* [Updating PLOs from J1](/updating-program-learning-outcomes.md)
 - Design
@@ -24,5 +23,6 @@
 	* [Introduction to Git](/introduction-to-git.md)
 	* [Composer](/composer.md)
 	* [Custom Upstreams](/custom-upstreams.md)
+	* [SSH Keys](/ssh-keys.md)
 - - - -
 * [Terms](/terms.md)
