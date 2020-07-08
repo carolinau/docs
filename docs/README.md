@@ -1,8 +1,8 @@
-# Piedmont International University Website Documentation
-> Welcome to the PIU Website documentation site. This documentation serves as a comprehensive guide to maintaining and updating the websites.  
+# Carolina University Website Documentation
+> Welcome to the CU Website documentation site. This documentation serves as a comprehensive guide to maintaining and updating the websites.  
 
 ## Sites Overview
-The Piedmont International University websites are built using Drupal 8 running on Pantheon hosting. The Pantheon hosting account comprises of the following sites:
+The Carolina University websites are built using Drupal 8 running on Pantheon hosting. The Pantheon hosting account comprises of the following sites:
 
 - [piedmontu.edu](https://piedmontu.edu)
 - [catalog.piedmontu.edu](https://catalog.piedmontu.edu)
@@ -11,7 +11,7 @@ The Piedmont International University websites are built using Drupal 8 running 
 - [education.piedmontu.edu](https://education.piedmontu.edu)
 - [business.piedmontu.edu](https://business.piedmontu.edu)
 - [sas.piedmontu.edu](https://sas.piedmontu.edu)
-- [seminary.piedmontu.edu](https://seminary.piedmontu.edu)
+- [divinity.piedmontu.edu](https://divinity.piedmontu.edu)
 
 The webmaster, CFO, and CIO all hold full admin access to the Pantheon hosting account.
 
@@ -20,7 +20,7 @@ The webmaster, CFO, and CIO all hold full admin access to the Pantheon hosting a
 - [news.piedmontu.edu](https://news.piedmontu.edu)
 - [mergers.piedmontu.edu](https://mergers.piedmontu.edu)
 - [piubruins.com](https://piubruins.com)
-- [piubruinsclub.com](https://piubruinsclub.com)
+- [cubruinsclub.com](https://cubruinsclub.com)
 - [my.piedmontu.edu](https://my.piedmontu.edu)
 - [alex.piedmontu.edu](https://alex.piedmontu.edu)
 

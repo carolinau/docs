@@ -1,7 +1,7 @@
 # Design Principles
 > Design is not just what it looks like and feels like. Design is how it works.” — Steve Jobs  
 
-The Piedmont International University network of websites are designed with these principles in mind:
+The Carolina University network of websites are designed with these principles in mind:
 
 - Simplicity
 - Accessibility

@@ -23,11 +23,11 @@ A basic understanding of how these tools are used is also essential to the rest 
 To get started managing any site, you will need to clone it to your development environment. Pantheon provides an easy way to do this. On the Pantheon dashboard, find a site and copy the command found under the **Clone with Git** button. Paste this into your terminal to copy the specified site locally.
 
 ## Custom Upstream Managed Sites
-All changes made to the custom upstream should not be done in an individual site. Rather, they should be performed in `piu-theme`.
+All changes made to the custom upstream should not be done in an individual site. Rather, they should be performed in `cu-theme`.
 
-To clone the `piu-theme` locally, navigate to the [piedmontiu/piu-theme](https://github.com/piedmontiu/piu-theme) GitHub repository and select the Clone button to clone it to your local machine.
+To clone the `cu-theme` locally, navigate to the [piedmontiu/cu-theme](https://github.com/piedmontiu/cu-theme) GitHub repository and select the Clone button to clone it to your local machine.
 
-Once it has been cloned, navigate to the `piu-theme` directory. You’ll need to add Pantheon’s Upstream as a [remote](https://git-scm.com/docs/git-remote) in order to pull in core Drupal updates to the custom upstream repository. To check if it has already been added, simply run `git remote` in Terminal.
+Once it has been cloned, navigate to the `cu-theme` directory. You’ll need to add Pantheon’s Upstream as a [remote](https://git-scm.com/docs/git-remote) in order to pull in core Drupal updates to the custom upstream repository. To check if it has already been added, simply run `git remote` in Terminal.
 
 If the Pantheon remote has not been added, only `origin` will return. If that is the case, run this command to add Pantheon as a remote:
 
@@ -44,9 +44,9 @@ pantheon-drops-8
 ```
 
 ### Updating Modules and Themes
-To get started with updating modules and themes on custom upstream managed sites you will need to have cloned the `piu-theme`  locally to your development environment. All module and theme updates should be made to this git repo instead of the individual sites. Making changes to this repo will allow all the microsites to pull from the same codebase.
+To get started with updating modules and themes on custom upstream managed sites you will need to have cloned the `cu-theme`  locally to your development environment. All module and theme updates should be made to this git repo instead of the individual sites. Making changes to this repo will allow all the microsites to pull from the same codebase.
 
-When there is a module update, download the ZIP file from the Drupal.org website. Unzip the folder and drag it to `piu-theme/modules` to replace the existing folder for that module. The same process applies when installing a new module. For theme updates, download the ZIP file from Drupal.org, unzip the folder, and drag it to `piu-theme/themes/contrib`
+When there is a module update, download the ZIP file from the Drupal.org website. Unzip the folder and drag it to `cu-theme/modules` to replace the existing folder for that module. The same process applies when installing a new module. For theme updates, download the ZIP file from Drupal.org, unzip the folder, and drag it to `cu-theme/themes/contrib`
 
 ### Updating Core
 All the custom upstream managed sites have a further upstream of Pantheon’s Drupal 8 git bucket. That is where core updates come from. To update core, run the following commands:
@@ -60,7 +60,7 @@ Provided no updates happened when running those core updates, proceed to commit 
 ```
 git commit -m ‘Update core to latest version’
 ```
-Then, push the changes to the `piu-theme` bucket using `git push`
+Then, push the changes to the `cu-theme` bucket using `git push`
 
 ### Pulling Updates on Microsites
 *Applies to module, theme, and core updates.*
@@ -93,7 +93,7 @@ terminus env:deploy patterson-school-of-business.test --cc
 terminus env:deploy school-of-arts-and-sciences.test --cc
 ```
 ```
-terminus env:deploy temple-baptist-seminary.test --cc
+terminus env:deploy piedmont-divinity-school.test --cc
 ```
 
 ### Deploy from Test to Live
@@ -119,7 +119,7 @@ terminus env:deploy patterson-school-of-business.live --cc
 terminus env:deploy school-of-arts-and-sciences.live --cc
 ```
 ```
-terminus env:deploy temple-baptist-seminary.live --cc
+terminus env:deploy piedmont-divinity-school.live --cc
 ```
 ### Clear Cache
 
@@ -148,7 +148,7 @@ terminus env:clear-cache patterson-school-of-business.live
 terminus env:clear-cache school-of-arts-and-sciences.live
 ```
 ```
-terminus env:clear-cache temple-baptist-seminary.live
+terminus env:clear-cache piedmont-divinity-school.live
 ```
 
 ## Composer Managed Sites
