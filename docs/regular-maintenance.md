@@ -158,7 +158,7 @@ Certain sites are managed with Composer in order to install modules with advance
 To update modules, themes, and core, `cd` into the local site directory and install updates for a specific module using this command: `composer update drupal/MODULE_NAME`
 
 ### Updating Core and Dependencies
-Run the following three commands to update Drupal Core and any PHP dependencies.
+Run the following three commands to update Drupal Core and any PHP dependencies. If the first command does not work, simply run `composer update` and then complete the remainder of the commands.
 ```
 composer update drupal/core —with-dependencies
 composer prepare-for-pantheon
