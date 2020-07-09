@@ -6,7 +6,7 @@ Regular maintenance is very important. Updating modules, themes, dependencies, a
 	- [education.piedmontu.edu](https://education.piedmontu.edu)
 	- [business.piedmontu.edu](https://business.piedmontu.edu)
 	- [sas.piedmontu.edu](https://sas.piedmontu.edu)
-	- [seminary.piedmontu.edu](https://seminary.piedmontu.edu)
+	- [divinity.piedmontu.edu](https://divinity.piedmontu.edu)
 - Composer managed sites
 	- [piedmontu.edu](https://piedmontu.edu)
 	- [catalog.piedmontu.edu](https://catalog.piedmontu.edu)
@@ -160,8 +160,8 @@ To update modules, themes, and core, `cd` into the local site directory and inst
 ### Updating Core and Dependencies
 Run the following three commands to update Drupal Core and any PHP dependencies. If the first command does not work, simply run `composer update` and then complete the remainder of the commands.
 ```
-composer update drupal/core —with-dependencies
+composer update drupal/core --with-dependencies
 composer prepare-for-pantheon
-composer install —no-dev
+composer install --no-dev
 ```
 Following this step, commit the changes and push them to the dev environment.
