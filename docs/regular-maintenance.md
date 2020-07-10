@@ -72,10 +72,10 @@ This will apply any pending updates in the custom upstream managed site dashboar
 ## Terminus Quick Commands
 ### Deploy from Dev to Test
 ```
-terminus env:deploy piedmont-international-university.test --cc
+terminus env:deploy carolina-university.test --cc
 ```
 ```
-terminus env:deploy piu-catalog.test --cc
+terminus env:deploy cu-catalog.test --cc
 ```
 ```
 terminus env:deploy e4.test --cc
@@ -98,10 +98,10 @@ terminus env:deploy piedmont-divinity-school.test --cc
 
 ### Deploy from Test to Live
 ```
-terminus env:deploy piedmont-international-university.live --cc
+terminus env:deploy carolina-university.live --cc
 ```
 ```
-terminus env:deploy piu-catalog.live --cc
+terminus env:deploy cu-catalog.live --cc
 ```
 ```
 terminus env:deploy e4.live --cc
@@ -127,10 +127,10 @@ The clear cache Terminus command follows the pattern of
 `terminus env:clear-cache $site.$environment`
 
 ```
-terminus env:clear-cache piedmont-international-university.live
+terminus env:clear-cache carolina-university.live
 ```
 ```
-terminus env:clear-cache piu-catalog.live
+terminus env:clear-cache cu-catalog.live
 ```
 ```
 terminus env:clear-cache e4.live
