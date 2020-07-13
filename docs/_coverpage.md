@@ -3,7 +3,7 @@
 ![logo](/media/logo.svg)
 
 # Website Documentation
-> Documentation for managing the PIU websites.
+> Documentation for managing the CU websites.
 
 [Get Started](#sites-overview)
 
