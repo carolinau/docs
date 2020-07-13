@@ -1,5 +1,5 @@
 # Collapse Text
-The [Collapse Text](https://www.drupal.org/project/collapse_text) module is used extensively throughout all PIU websites to provide grouped grouped pieces of information in a easily digestible fashion.
+The [Collapse Text](https://www.drupal.org/project/collapse_text) module is used extensively throughout all CU websites to provide grouped grouped pieces of information in a easily digestible fashion.
 
 This is what the final result looks like:
 ![](collapse-text/Screen%20Shot%202020-02-11%20at%204.41.09%20PM.png)

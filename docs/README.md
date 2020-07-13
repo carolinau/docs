@@ -19,7 +19,7 @@ The webmaster, CFO, and CIO all hold full admin access to the Pantheon hosting a
 - [library.piedmontu.edu](https://library.piedmontu.edu)
 - [news.piedmontu.edu](https://news.piedmontu.edu)
 - [mergers.piedmontu.edu](https://mergers.piedmontu.edu)
-- [piubruins.com](https://piubruins.com)
+- [cubruins.com](https://cubruins.com)
 - [cubruinsclub.com](https://cubruinsclub.com)
 - [my.piedmontu.edu](https://my.piedmontu.edu)
 - [alex.piedmontu.edu](https://alex.piedmontu.edu)

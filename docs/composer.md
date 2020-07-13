@@ -17,4 +17,4 @@ Download and run the [composer-setup.exe](https://getcomposer.org/doc/00-intro.m
 
 ## Composer Managed Sites vs. Custom Upstream Managed Sites
 Websites that are managed via a [Custom Upstream](/custom-upstreams) are not utilizing Composer. However, they are using Git on the command line for version control purposes (see [Introduction to Git](/introduction-to-git) for more information). Composer managed sites also use Git for versioning purposes.
-Composer is just one of many tools available on the command line, as is Git. These tools are used side by side on the PIU websites.
+Composer is just one of many tools available on the command line, as is Git. These tools are used side by side on the CU websites.
