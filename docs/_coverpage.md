@@ -1,6 +1,6 @@
 <!-- _coverpage.md -->
 
-![logo](/media/logo.svg)
+![logo](/media/cu-seal.svg)
 
 # Website Documentation
 > Documentation for managing the CU websites.
@@ -9,4 +9,4 @@
 
 <!-- background color -->
 
-![color](#102648)
+![color](#002868)
