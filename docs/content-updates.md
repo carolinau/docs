@@ -2,7 +2,7 @@
 There are two ways that content on all of the sites are managed. The first is via templated content types. These include:
 - Faculty/Staff
 - Programs
-- Standard Pages (piedmontu.edu only)
+- Standard Pages (carolinau.edu only)
 
 The second method is via Paragraphs. Paragraphs are used primarily on:
 - Basic Pages
@@ -22,4 +22,4 @@ Editing content follows the same procedure, no matter if the page is created usi
 To add a new Paragraph, first navigate to the page you wish to edit and select the **Edit** tab to launch the editing screen. Then, scroll to the bottom until you see the **Add New Paragraph** button. Click on the drop down arrow to find the specific Paragraph type you want, and then click on that to add a new one to the page. Proceed to fill it out as desired, and click **Save** once finished.
 
 ## Links
-When creating links that go to pages on the same site, always use relative URLs. For the academics page, this would look like `/academics` . When linking to sites at a separate domain or subdomain, use the full absolute URL: `https://piedmontu.edu/academics`. 
+When creating links that go to pages on the same site, always use relative URLs. For the academics page, this would look like `/academics` . When linking to sites at a separate domain or subdomain, use the full absolute URL: `https://carolinau.edu/academics`. 

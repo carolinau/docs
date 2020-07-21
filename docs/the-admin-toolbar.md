@@ -7,7 +7,7 @@ The admin toolbar is the primary administrative means to interface with the Drup
 - Content
 	- Browse all content entities on the site
 - Comments
-	- Not used on PIU websites
+	- Not used on CU websites
 - Entity Share
 	- Sync content from remote websites to the website you are currently on
 - Files
@@ -20,9 +20,9 @@ The admin toolbar is the primary administrative means to interface with the Drup
 	* Configure locations of menus, status messages, branding, footer menus, and copyright statements
 	* Blocks can also be used in Paragraphs
 * Comment types
-	* Not used on PIU websites
+	* Not used on CU websites
 * Contact forms
-	* Not used on PIU websites
+	* Not used on CU websites
 * Content types
 	* Create and manage fields and display settings for custom content types
 * Display Suite
@@ -82,7 +82,7 @@ The admin toolbar is the primary administrative means to interface with the Drup
 	- JSON:API
 	- RSS publishing
 	- Aggregator
-		- Used for PIU News RSS feed
+		- Used for CU News RSS feed
 - System
 	- Basic site settings
 	- Google Analytics
@@ -119,7 +119,7 @@ The admin toolbar is the primary administrative means to interface with the Drup
 - Metatag plugins
 	- Overview of plugins used in metatag
 - Redis
-	- Usage statistics for Redis, the caching system on piedmontu.edu
+	- Usage statistics for Redis, the caching system on carolinau.edu
 - Status report
 	- Big picture report of the site’s health as a whole
 - Top ‘access denied’ errors

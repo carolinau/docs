@@ -1,15 +1,15 @@
 # Regular Maintenance
 Regular maintenance is very important. Updating modules, themes, dependencies, and core ensures that the websites will remain secure and efficient. This section is broken down into two categories:
 - Custom upstream managed sites
-	- [e4.piedmontu.edu](https://e4.piedmontu.edu)
-	- [leadership.piedmontu.edu](https://leadership.piedmontu.edu)
-	- [education.piedmontu.edu](https://education.piedmontu.edu)
-	- [business.piedmontu.edu](https://business.piedmontu.edu)
-	- [sas.piedmontu.edu](https://sas.piedmontu.edu)
-	- [divinity.piedmontu.edu](https://divinity.piedmontu.edu)
+	- [e4.carolinau.edu](https://e4.carolinau.edu)
+	- [leadership.carolinau.edu](https://leadership.carolinau.edu)
+	- [education.carolinau.edu](https://education.carolinau.edu)
+	- [business.carolinau.edu](https://business.carolinau.edu)
+	- [sas.carolinau.edu](https://sas.carolinau.edu)
+	- [divinity.carolinau.edu](https://divinity.piedmontu.edu)
 - Composer managed sites
-	- [piedmontu.edu](https://piedmontu.edu)
-	- [catalog.piedmontu.edu](https://catalog.piedmontu.edu)
+	- [carolinau.edu](https://carolinau.edu)
+	- [catalog.carolinau.edu](https://catalog.carolinau.edu)
 
 ## Required Tools
 In order to do updates on the sites, you will need to have the following tools installed on your local development environment:
@@ -25,7 +25,7 @@ To get started managing any site, you will need to clone it to your development 
 ## Custom Upstream Managed Sites
 All changes made to the custom upstream should not be done in an individual site. Rather, they should be performed in `cu-theme`.
 
-To clone the `cu-theme` locally, navigate to the [piedmontiu/cu-theme](https://github.com/piedmontiu/cu-theme) GitHub repository and select the Clone button to clone it to your local machine.
+To clone the `cu-theme` locally, navigate to the [carolinau/cu-theme](https://github.com/piedmontiu/cu-theme) GitHub repository and select the Clone button to clone it to your local machine.
 
 Once it has been cloned, navigate to the `cu-theme` directory. You’ll need to add Pantheon’s Upstream as a [remote](https://git-scm.com/docs/git-remote) in order to pull in core Drupal updates to the custom upstream repository. To check if it has already been added, simply run `git remote` in Terminal.
 

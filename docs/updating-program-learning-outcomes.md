@@ -1,5 +1,5 @@
 # Updating Program Learning Outcomes
-?> Applies to [catalog.piedmontu.edu](https://catalog.piedmontu.edu)
+?> Applies to [catalog.carolinau.edu](https://catalog.carolinau.edu)
 
 ## Process
 ### SQL Server
@@ -26,7 +26,7 @@ Open your desired FTP client, such as [FileZilla](https://filezilla-project.org/
 In the remote directory, navigate to `files > csv`. Upload the new *plo.csv* from your machine to the server, making sure to overwrite the file on the server.
 
 ### Run Migration
-In the Drupal Admin UI, navigate to [Manage > Structure > Migrations.](https://catalog.piedmontu.edu/admin/structure/migrate) Click on *List migrations* within the *Program Learning Outcomes* migration group. Select *Execute* within the *Import program learning outcomes* migration task.
+In the Drupal Admin UI, navigate to [Manage > Structure > Migrations.](https://catalog.carolinau.edu/admin/structure/migrate) Click on *List migrations* within the *Program Learning Outcomes* migration group. Select *Execute* within the *Import program learning outcomes* migration task.
 
 For the operation, make sure *Import* is selected. Then, expand the *Additional Execution Options* section and check the *Update* box to update all previously-imported content as well as add new content.
 

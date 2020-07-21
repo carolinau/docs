@@ -1,5 +1,5 @@
 # Simple XML Sitemap
-The Simple XML Sitemap is a key module to keeping search engine results up to date. A sitemap generates a master list of all the nodes present on the site, and is viewable at [piedmontu.edu/sitemap.xml](https://piedmontu.edu/sitemap.xml) (swap the base URL for the desired site).
+The Simple XML Sitemap is a key module to keeping search engine results up to date. A sitemap generates a master list of all the nodes present on the site, and is viewable at [carolinau.edu/sitemap.xml](https://carolinau.edu/sitemap.xml) (swap the base URL for the desired site).
 
 By navigating to the Simple XML Sitemap module via the configuration admin menu item, you can set the global settings and regenerate the sitemap.
 

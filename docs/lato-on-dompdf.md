@@ -1,5 +1,5 @@
 # Lato on DOMPDF
-?> Applies to catalog.piedmontu.edu
+?> Applies to catalog.carolinau.edu
 
 If Lato stops working on the *View PDF* function on the catalog website, the Lato files may need to be regenerated. This often happens after the Entity Print module has been updated.
 
