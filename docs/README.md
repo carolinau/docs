@@ -16,9 +16,9 @@ The Carolina University websites are built using Drupal 8 running on Pantheon ho
 The webmaster, CFO, and CIO all hold full admin access to the Pantheon hosting account.
 
 ## Other Sites
-- [library.piedmontu.edu](https://library.piedmontu.edu)
-- [news.carolinau.edu](https://news.piedmontu.edu)
-- [mergers.carolinau.edu](https://mergers.piedmontu.edu)
+- [library.carolinau.edu](https://library.carolinau.edu)
+- [news.carolinau.edu](https://news.carolinau.edu)
+- [mergers.carolinau.edu](https://mergers.carolinau.edu)
 - [cubruins.com](https://cubruins.com)
 - [cubruinsclub.com](https://cubruinsclub.com)
 - [my.piedmontu.edu](https://my.piedmontu.edu)
