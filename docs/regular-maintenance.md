@@ -6,7 +6,7 @@ Regular maintenance is very important. Updating modules, themes, dependencies, a
 	- [education.carolinau.edu](https://education.carolinau.edu)
 	- [business.carolinau.edu](https://business.carolinau.edu)
 	- [sas.carolinau.edu](https://sas.carolinau.edu)
-	- [divinity.carolinau.edu](https://divinity.piedmontu.edu)
+	- [divinity.carolinau.edu](https://divinity.carolinau.edu)
 - Composer managed sites
 	- [carolinau.edu](https://carolinau.edu)
 	- [catalog.carolinau.edu](https://catalog.carolinau.edu)
@@ -70,6 +70,14 @@ terminus site:list --format=list | terminus site:mass-update:apply
 ```
 This will apply any pending updates in the custom upstream managed site dashboards and apply them to the dev environment. Test at least one of the sites in dev and test before deploying all changes to test and then to live.
 ## Terminus Quick Commands
+### Scripts
+Download a .sh script that bundles each group below into a script for easy updates.
+- [Dev to Test](https://webdocs.carolinau.edu/scripts/devtest.sh)
+- [Test to Live](https://webdocs.carolinau.edu/scripts/testlive.sh)
+- [Clear Cache](https://webdocs.carolinau.edu/scripts/clearcache.sh)
+
+Download the script files to your desired directory. To make the files executable, run `chmod +x ./devtest.sh` and then to run it, enter `./devtest.sh` 
+
 ### Deploy from Dev to Test
 ```
 terminus env:deploy carolina-university.test --cc
