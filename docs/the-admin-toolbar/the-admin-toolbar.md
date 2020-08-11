@@ -1,6 +1,6 @@
 # The Admin Toolbar
 The admin toolbar is the primary administrative means to interface with the Drupal content management system.
-![](the-admin-toolbar/Screen%20Shot%202020-02-27%20at%202.10.32%20PM.png)
+![](the-admin-toolbar/the-admin-toolbar.png)
 
 ## Admin Menu Tree
 ### Content
