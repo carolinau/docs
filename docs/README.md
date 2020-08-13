@@ -17,12 +17,12 @@ The webmaster, CFO, and CIO all hold full admin access to the Pantheon hosting a
 
 ## Other Sites
 - [library.carolinau.edu](https://library.carolinau.edu)
-- [news.carolinau.edu](https://news.carolinau.edu)
-- [mergers.carolinau.edu](https://mergers.carolinau.edu)
+- [news.carolinau.edu](https://news.piedmontu.edu)
+- [mergers.carolinau.edu](https://mergers.piedmontu.edu)
 - [cubruins.com](https://cubruins.com)
 - [cubruinsclub.com](https://cubruinsclub.com)
-- [my.piedmontu.edu](https://my.piedmontu.edu)
-- [alex.piedmontu.edu](https://alex.piedmontu.edu)
+- [my.carolinau.edu](https://my.carolinau.edu)
+- [alex.carolinau.edu](https://alex.carolinau.edu)
 
 ## Site Structure
 > Microsite: a school-specific site containing programs, program courses, courses, and school faculty.  
