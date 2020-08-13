@@ -3,7 +3,7 @@
 
 If Lato stops working on the *View PDF* function on the catalog website, the Lato files may need to be regenerated. This often happens after the Entity Print module has been updated.
 
-Start by downloading the [load_font.php](https://github.com/dompdf/utils/blob/master/load_font.php) file from the dompdf utils directory. You will also need to [download the Lato font](https://marketing.piedmontu.edu/#/typography) to your local machine. Place the unzipped Lato folder in your home directory, or wherever else the **load_font.php** file is located.
+Start by downloading the [load_font.php](https://github.com/dompdf/utils/blob/master/load_font.php) file from the dompdf utils directory. You will also need to [download the Lato font](https://marketing.carolinau.edu/#/typography) to your local machine. Place the unzipped Lato folder in your home directory, or wherever else the **load_font.php** file is located.
 Change the path at the top of the file to `cu-catalog/vendor/autoload.php`, or wherever the autoload.php file is relative to the location of the **load_font.php** file. If `cu-catalog` lives in your home directory `~/` then place the **load_font.php** file in the home directory.
 
 Open terminal and cd into the same directory as the load_font.php file. Run this command:

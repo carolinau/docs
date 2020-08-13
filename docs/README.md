@@ -17,8 +17,8 @@ The webmaster, CFO, and CIO all hold full admin access to the Pantheon hosting a
 
 ## Other Sites
 - [library.carolinau.edu](https://library.carolinau.edu)
-- [news.carolinau.edu](https://news.piedmontu.edu)
-- [mergers.carolinau.edu](https://mergers.piedmontu.edu)
+- [news.carolinau.edu](https://news.carolinau.edu)
+- [mergers.carolinau.edu](https://mergers.carolinau.edu)
 - [cubruins.com](https://cubruins.com)
 - [cubruinsclub.com](https://cubruinsclub.com)
 - [my.carolinau.edu](https://my.carolinau.edu)
