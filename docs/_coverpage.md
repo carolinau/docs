@@ -5,7 +5,7 @@
 # Website Documentation
 > Documentation for managing the CU websites.
 
-[Get Started](#sites-overview)
+[Get Started](/regular-maintenance.md)
 
 <!-- background color -->
 

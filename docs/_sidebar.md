@@ -5,6 +5,7 @@
 	* [Content Updates](/content-updates.md)
 	* [Updating Courses from J1 Catalog](/updating-courses-catalog.md)
 	* [Updating PLOs from J1](/updating-program-learning-outcomes.md)
+	* [Creating the Catalog PDF](/creating-the-catalog-pdf.md)
 - Design
 	* [Design Principles](/design-principles.md)
 - Drupal
