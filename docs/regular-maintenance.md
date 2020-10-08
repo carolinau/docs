@@ -17,15 +17,7 @@ In order to do updates on the sites, you will need to have the following tools i
 - [Composer](https://getcomposer.org/)
 - [Terminus](https://pantheon.io/docs/terminus/install)
 
-A basic understanding of how these tools are used is also essential to the rest of this section. Common commands and procedures will be documented, but these docs don’t go in-depth into how these too
-
-### Terminal Aliases
-To use commands such as `composer` and `terminus` you'll need a file named `~/.zshrc` in your home directory where $PATH represents your username and any additional directory structure with the following contents:
-```
-alias terminus=/Users/$PATH/terminus/vendor/bin/terminus
-alias composer=/Users/$PATH/composer.phar
-
-```
+A basic understanding of how these tools are used is also essential to the rest of this section. Common commands and procedures will be documented, but these docs don’t go in-depth into how these tools work.
 
 ### Cloning Sites Locally
 To get started managing any site, you will need to clone it to your development environment. Pantheon provides an easy way to do this. On the Pantheon dashboard, find a site and copy the command found under the **Clone with Git** button. Paste this into your terminal to copy the specified site locally.
@@ -84,7 +76,7 @@ Download a .sh script that bundles each group below into a script for easy updat
 - [Test to Live](https://webdocs.carolinau.edu/scripts/testlive.sh)
 - [Clear Cache](https://webdocs.carolinau.edu/scripts/clearcache.sh)
 
-Download the script files to your desired directory. To make the files executable, run `chmod +x ./devtest.sh` and then to run it, enter `./devtest.sh`
+Download the script files to your desired directory. To make the files executable, run `chmod +x ./devtest.sh` and then to run it, enter `./devtest.sh` 
 
 ### Deploy from Dev to Test
 ```
@@ -181,3 +173,12 @@ composer prepare-for-pantheon
 composer install --no-dev
 ```
 Following this step, commit the changes and push them to the dev environment.
+
+## Troubleshooting
+### Out of Memory Error
+
+If you get the error  `Fatal error: Allowed memory size of 1610612736 bytes exhausted (tried to allocate 4096 bytes) in phar:///Users/$USER/composer.phar/src/Composer/DependencyResolver/RuleWatchGraph.php on line 52`  then run the following command, modifying as necessary for the location of Composer on your system (Linux/macOS).
+
+```
+export COMPOSER_MEMORY_LIMIT=99999999999 && php -d memory_limit=-1 /Users/$USER/composer.phar update
+```
