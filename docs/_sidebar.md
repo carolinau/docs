@@ -28,3 +28,4 @@
 	* [SSH Keys](/ssh-keys.md)
 - - - -
 * [Terms](/terms.md)
+* [Documentation for the Documentation](/documentation-for-the-documentation.md)
