@@ -1,12 +1,13 @@
 # Regular Maintenance
 Regular maintenance is very important. Updating modules, themes, dependencies, and core ensures that the websites will remain secure and efficient. This section is broken down into two categories:
 - Custom upstream managed sites
+	- [hr.carolinau.edu](https://hr.carolinau.edu)
 	- [e4.carolinau.edu](https://e4.carolinau.edu)
 	- [leadership.carolinau.edu](https://leadership.carolinau.edu)
 	- [education.carolinau.edu](https://education.carolinau.edu)
 	- [business.carolinau.edu](https://business.carolinau.edu)
-	- [sas.carolinau.edu](https://sas.carolinau.edu)
 	- [divinity.carolinau.edu](https://divinity.carolinau.edu)
+	- [sas.carolinau.edu](https://sas.carolinau.edu)
 - Composer managed sites
 	- [carolinau.edu](https://carolinau.edu)
 	- [catalog.carolinau.edu](https://catalog.carolinau.edu)
@@ -76,7 +77,7 @@ Download a .sh script that bundles each group below into a script for easy updat
 - [Test to Live](https://webdocs.carolinau.edu/scripts/testlive.sh)
 - [Clear Cache](https://webdocs.carolinau.edu/scripts/clearcache.sh)
 
-Download the script files to your desired directory. To make the files executable, run `chmod +x ./devtest.sh` and then to run it, enter `./devtest.sh` 
+Download the script files to your desired directory. To make the files executable, run `chmod +x ./devtest.sh` and then to run it, enter `./devtest.sh`
 
 ### Deploy from Dev to Test
 ```
@@ -84,6 +85,9 @@ terminus env:deploy carolina-university.test --cc
 ```
 ```
 terminus env:deploy cu-catalog.test --cc
+```
+```
+terminus env:deploy cu-human-resources.test --cc
 ```
 ```
 terminus env:deploy e4.test --cc
@@ -98,10 +102,10 @@ terminus env:deploy moore-school-of-education.test --cc
 terminus env:deploy patterson-school-of-business.test --cc
 ```
 ```
-terminus env:deploy school-of-arts-and-sciences.test --cc
-```
-```
 terminus env:deploy piedmont-divinity-school.test --cc
+```
+```
+terminus env:deploy school-of-arts-and-sciences.test --cc
 ```
 
 ### Deploy from Test to Live
@@ -110,6 +114,9 @@ terminus env:deploy carolina-university.live --cc
 ```
 ```
 terminus env:deploy cu-catalog.live --cc
+```
+```
+terminus env:deploy cu-human-resources.live --cc
 ```
 ```
 terminus env:deploy e4.live --cc
@@ -124,10 +131,10 @@ terminus env:deploy moore-school-of-education.live --cc
 terminus env:deploy patterson-school-of-business.live --cc
 ```
 ```
-terminus env:deploy school-of-arts-and-sciences.live --cc
-```
-```
 terminus env:deploy piedmont-divinity-school.live --cc
+```
+```
+terminus env:deploy school-of-arts-and-sciences.live --cc
 ```
 ### Clear Cache
 
@@ -139,6 +146,9 @@ terminus env:clear-cache carolina-university.live
 ```
 ```
 terminus env:clear-cache cu-catalog.live
+```
+```
+terminus env:clear-cache cu-human-resources.live
 ```
 ```
 terminus env:clear-cache e4.live
@@ -153,10 +163,10 @@ terminus env:clear-cache moore-school-of-education.live
 terminus env:clear-cache patterson-school-of-business.live
 ```
 ```
-terminus env:clear-cache school-of-arts-and-sciences.live
-```
-```
 terminus env:clear-cache piedmont-divinity-school.live
+```
+```
+terminus env:clear-cache school-of-arts-and-sciences.live
 ```
 
 ## Composer Managed Sites
@@ -180,5 +190,5 @@ Following this step, commit the changes and push them to the dev environment.
 If you get the error  `Fatal error: Allowed memory size of 1610612736 bytes exhausted (tried to allocate 4096 bytes) in phar:///Users/$USER/composer.phar/src/Composer/DependencyResolver/RuleWatchGraph.php on line 52`  then run the following command, modifying as necessary for the location of Composer on your system (Linux/macOS).
 
 ```
-export COMPOSER_MEMORY_LIMIT=99999999999 && php -d memory_limit=-1 /Users/$USER/composer.phar update
+export COMPOSER_MEMORY_LIMIT=99999999999 && php -d memory_limit=-1 /Users/$USER/CU/composer.phar update
 ```

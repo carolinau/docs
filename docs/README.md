@@ -6,12 +6,13 @@ The Carolina University websites are built using Drupal 8 running on Pantheon ho
 
 - [carolinau.edu](https://carolinau.edu)
 - [catalog.carolinau.edu](https://catalog.carolinau.edu)
+- [hr.carolinau.edu](https://hr.carolinau.edu)
 - [e4.carolinau.edu](https://e4.carolinau.edu)
 - [leadership.carolinau.edu](https://leadership.carolinau.edu)
 - [education.carolinau.edu](https://education.carolinau.edu)
 - [business.carolinau.edu](https://business.carolinau.edu)
-- [sas.carolinau.edu](https://sas.carolinau.edu)
 - [divinity.carolinau.edu](https://divinity.carolinau.edu)
+- [sas.carolinau.edu](https://sas.carolinau.edu)
 
 The webmaster, CFO, and CIO all hold full admin access to the Pantheon hosting account.
 
