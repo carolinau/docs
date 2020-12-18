@@ -1,0 +1,9 @@
+#!/bin/zsh
+open https://carolinau.edu/cron/A_7ls0TzWxWJ6bqcqHOY3-9O3rDZu5eCV_8NyMxm1Q2Mg19glOKkXmp2vgLwr8IFLHKHLkzjHg
+open https://catalog.carolinau.edu/cron/1y4kgyNR8Avv-PkrZadJKhbzpyRduem1vkcoRkvbbFbSbKrNG7W3BQopFex3p25td4_IthGGRQ
+open https://e4.carolinau.edu/cron/A_7ls0TzWxWJ6bqcqHOY3-9O3rDZu5eCV_8NyMxm1Q2Mg19glOKkXmp2vgLwr8IFLHKHLkzjHg
+open https://leadership.carolinau.edu/cron/A_7ls0TzWxWJ6bqcqHOY3-9O3rDZu5eCV_8NyMxm1Q2Mg19glOKkXmp2vgLwr8IFLHKHLkzjHg
+open https://education.carolinau.edu/cron/A_7ls0TzWxWJ6bqcqHOY3-9O3rDZu5eCV_8NyMxm1Q2Mg19glOKkXmp2vgLwr8IFLHKHLkzjHg
+open https://business.carolinau.edu/cron/A_7ls0TzWxWJ6bqcqHOY3-9O3rDZu5eCV_8NyMxm1Q2Mg19glOKkXmp2vgLwr8IFLHKHLkzjHg
+open https://sas.carolinau.edu/cron/A_7ls0TzWxWJ6bqcqHOY3-9O3rDZu5eCV_8NyMxm1Q2Mg19glOKkXmp2vgLwr8IFLHKHLkzjHg
+open https://divinity.carolinau.edu/cron/A_7ls0TzWxWJ6bqcqHOY3-9O3rDZu5eCV_8NyMxm1Q2Mg19glOKkXmp2vgLwr8IFLHKHLkzjHg

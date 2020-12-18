@@ -76,6 +76,8 @@ Download a .sh script that bundles each group below into a script for easy updat
 - [Dev to Test](https://webdocs.carolinau.edu/scripts/devtest.sh)
 - [Test to Live](https://webdocs.carolinau.edu/scripts/testlive.sh)
 - [Clear Cache](https://webdocs.carolinau.edu/scripts/clearcache.sh)
+- [Run Cron](https://webdocs.carolinau.edu/scripts/runcron.sh)
+- [Open Status Report](https://webdocs.carolinau.edu/scripts/openstatusreport.sh)
 
 Download the script files to your desired directory. To make the files executable, run `chmod +x ./devtest.sh` and then to run it, enter `./devtest.sh`
 
