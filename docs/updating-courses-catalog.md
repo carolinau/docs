@@ -43,3 +43,18 @@ When courses are marked as inactive in the catalog, and after an *Import courses
 With the database open on one screen, open the Drupal content screen on another and look up all those courses codes that have a **1** in the **source_row_status** column and delete them from the website. Once done, you may delete those rows from the **migrate_map_catalog_master_c33a9w5** table.
 
 Once the nodes on the website have been deleted, go back to the courses migration screen and verify that Unprocessed reads 0.
+
+### Troubleshooting Inactive Courses
+If you accidentally delete the rows from the **migrate_map_catalog_master_c33a9w5** before deleting the courses in Drupal, run the following SQL query against the website database to retrieve the courses that should be deleted from Drupal.
+
+```
+SELECT
+	title
+FROM
+	node_field_data
+WHERE
+	title NOT in(
+		SELECT
+			sourceid1 FROM migrate_map_catalog_master_c33a9w5)
+	AND TYPE = 'course'
+  ```
