@@ -27,6 +27,7 @@
 	* [Custom Upstreams](/custom-upstreams.md)
 	* [SSH Keys](/ssh-keys.md)
 - SQL Server Reporting Services
+	* [Bar Chart Color Expressions](/ssrs/bar-chart-color-expresssions.md)
 	* [Fixed Column Headers](/ssrs/fixed-column-headers.md)
 - - - -
 * [Terms](/terms.md)
