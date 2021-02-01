@@ -26,6 +26,8 @@
 		* [Lato on DOMPDF](/lato-on-dompdf.md)
 	* [Custom Upstreams](/custom-upstreams.md)
 	* [SSH Keys](/ssh-keys.md)
+- SQL Server Reporting Services
+	* [Fixed Column Headers](/ssrs/fixed-column-headers.md)
 - - - -
 * [Terms](/terms.md)
 * [Documentation for the Documentation](/documentation-for-the-documentation.md)
