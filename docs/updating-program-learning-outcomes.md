@@ -6,14 +6,24 @@
 Run the following SQL SELECT statement on the primary Jenzabar database to get the contents of the CATALOG_MASTER table in the necessary format:
 
 ```
-SELECT p1.MAJOR_CDE, m.MAJOR_MINOR_DESC,
-LTRIM((SELECT STUFF((SELECT  '| ' + p2.PLO_DESC
-    FROM PIU_PROGRAM_LEARNING_OUTCOMES p2
-	WHERE p2.MAJOR_CDE=p1.MAJOR_CDE and p2.PLO_STS='A'
-    FOR XML PATH('')), 1, 1, ''))) AS PLO_DESC
-    FROM PIU_PROGRAM_LEARNING_OUTCOMES p1
-	JOIN MAJOR_MINOR_DEF m ON p1.MAJOR_CDE=m.MAJOR_CDE
-    GROUP BY p1.MAJOR_CDE, m.MAJOR_MINOR_DESC
+SELECT P1.MAJOR_CDE
+	,M.MAJOR_MINOR_DESC
+	,LTRIM((
+			SELECT STUFF((
+						SELECT '| ' + P2.PLO_DESC
+						FROM PIU_PROGRAM_LEARNING_OUTCOMES P2
+						WHERE P2.MAJOR_CDE = P1.MAJOR_CDE
+							AND P2.PLO_STS = 'A'
+						FOR XML PATH('')
+						), 1, 1, '')
+			)) AS PLO_DESC
+FROM PIU_PROGRAM_LEARNING_OUTCOMES P1
+JOIN MAJOR_MINOR_DEF M
+	ON P1.MAJOR_CDE = M.MAJOR_CDE
+WHERE P1.PLO_STS = 'A'
+GROUP BY P1.MAJOR_CDE
+	,M.MAJOR_MINOR_DESC
+	ORDER BY MAJOR_CDE
 ```
 
 Select all the contents, right click and select “Save Results As…” and save the file as `plo.csv`
