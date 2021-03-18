@@ -83,60 +83,60 @@ Download the script files to your desired directory. To make the files executabl
 
 ### Deploy from Dev to Test
 ```
-terminus env:deploy carolina-university.test --cc
+terminus env:deploy carolina-university.test
 ```
 ```
-terminus env:deploy cu-catalog.test --cc
+terminus env:deploy cu-catalog.test
 ```
 ```
-terminus env:deploy cu-human-resources.test --cc
+terminus env:deploy cu-human-resources.test
 ```
 ```
-terminus env:deploy e4.test --cc
+terminus env:deploy e4.test
 ```
 ```
-terminus env:deploy john-wesley-school-of-leadership.test --cc
+terminus env:deploy john-wesley-school-of-leadership.test
 ```
 ```
-terminus env:deploy moore-school-of-education.test --cc
+terminus env:deploy moore-school-of-education.test
 ```
 ```
-terminus env:deploy patterson-school-of-business.test --cc
+terminus env:deploy patterson-school-of-business.test
 ```
 ```
-terminus env:deploy piedmont-divinity-school.test --cc
+terminus env:deploy piedmont-divinity-school.test
 ```
 ```
-terminus env:deploy school-of-arts-and-sciences.test --cc
+terminus env:deploy school-of-arts-and-sciences.test
 ```
 
 ### Deploy from Test to Live
 ```
-terminus env:deploy carolina-university.live --cc
+terminus env:deploy carolina-university.live
 ```
 ```
-terminus env:deploy cu-catalog.live --cc
+terminus env:deploy cu-catalog.live
 ```
 ```
-terminus env:deploy cu-human-resources.live --cc
+terminus env:deploy cu-human-resources.live
 ```
 ```
-terminus env:deploy e4.live --cc
+terminus env:deploy e4.live
 ```
 ```
-terminus env:deploy john-wesley-school-of-leadership.live --cc
+terminus env:deploy john-wesley-school-of-leadership.live
 ```
 ```
-terminus env:deploy moore-school-of-education.live --cc
+terminus env:deploy moore-school-of-education.live
 ```
 ```
-terminus env:deploy patterson-school-of-business.live --cc
+terminus env:deploy patterson-school-of-business.live
 ```
 ```
-terminus env:deploy piedmont-divinity-school.live --cc
+terminus env:deploy piedmont-divinity-school.live
 ```
 ```
-terminus env:deploy school-of-arts-and-sciences.live --cc
+terminus env:deploy school-of-arts-and-sciences.live
 ```
 ### Clear Cache
 
