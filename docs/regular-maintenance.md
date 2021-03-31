@@ -70,6 +70,19 @@ You can run a Terminus command to automatically pull in the updates from the cus
 terminus site:list --format=list | terminus site:mass-update:apply
 ```
 This will apply any pending updates in the custom upstream managed site dashboards and apply them to the dev environment. Test at least one of the sites in dev and test before deploying all changes to test and then to live.
+
+### Mass Deploying Updates
+*Applies to all Pantheon sites*
+You can run a Terminus mass update command to deploy updates from dev to test, and then from test to live. This requires the [Terminus Mass Run](https://github.com/jnettik/terminus-mass-run) plugin. This plugin needs to be installed to the ``~/.terminus/plugins` folder.
+#### Deploy all updates to test
+```
+terminus site:list --format=list | terminus env:mass:deploy --env=test
+```
+#### Deploy all updates to live
+```
+terminus site:list --format=list | terminus env:mass:deploy --env=live
+```
+
 ## Terminus Quick Commands
 ### Scripts
 Download a .sh script that bundles each group below into a script for easy updates.
