@@ -82,7 +82,10 @@ terminus site:list --format=list | terminus env:mass:deploy --env=test
 ```
 terminus site:list --format=list | terminus env:mass:deploy --env=live
 ```
-
+#### Clear code caches on all sites
+```
+terminus site:list --format=list | terminus site:mass:upstream:clear-cache
+```
 ## Terminus Quick Commands
 ### Scripts
 Download a .sh script that bundles each group below into a script for easy updates.
