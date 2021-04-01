@@ -47,7 +47,7 @@ Once all these changes are complete, take another backup of the Test enviroment 
 ## Prepare the Local Machine for Exporting
 The archiving of the catalog will need to be performed locally on a macOS machine. The software used for this export is a command line tool, [HTTrack](http://www.httrack.com). It is recommended to install HTTrack using [Homebrew](https://brew.sh). If Homebrew is already installed on your machine, simply run `brew install httrack`.
 
->! The export of the catalog will take around 4 hours. Be prepared to monitor the command line for this time to answer any prompts.
+!> The export of the catalog will take around 4 hours. Be prepared to monitor the command line for this time to answer any prompts.
 
 Once installed, `cd` to the enclosing directory where you would like to download the archived catalog to. Once everything is ready to begin the export, run this command to start the exporting of the catalog site to HTML, ensuring that the correct year is entered between the quotes:
 
