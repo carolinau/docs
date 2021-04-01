@@ -73,7 +73,7 @@ This will apply any pending updates in the custom upstream managed site dashboar
 
 ### Mass Deploying Updates
 *Applies to all Pantheon sites*
-You can run a Terminus mass update command to deploy updates from dev to test, and then from test to live. This requires the [Terminus Mass Run](https://github.com/jnettik/terminus-mass-run) plugin. This plugin needs to be installed to the ``~/.terminus/plugins` folder.
+You can run a Terminus mass update command to deploy updates from dev to test, and then from test to live. This requires the [Terminus Mass Run](https://github.com/jnettik/terminus-mass-run) plugin. This plugin needs to be installed to the `~/.terminus/plugins` folder.
 #### Deploy all updates to test
 ```
 terminus site:list --format=list | terminus env:mass:deploy --env=test
@@ -88,7 +88,7 @@ terminus site:list --format=list | terminus site:mass:upstream:clear-cache
 ```
 ## Terminus Quick Commands
 ### Scripts
-Download a .sh script that bundles each group below into a script for easy updates.
+Download a .sh script that bundles each group below into a script for easy updates. These scripts can be used as an alternative to the Terminus Mass Run plugin, although the Terminus Mass Run plugin is a more efficient way.
 - [Dev to Test](https://webdocs.carolinau.edu/scripts/devtest.sh)
 - [Test to Live](https://webdocs.carolinau.edu/scripts/testlive.sh)
 - [Clear Cache](https://webdocs.carolinau.edu/scripts/clearcache.sh)
@@ -206,7 +206,7 @@ Following this step, commit the changes and push them to the dev environment.
 ### Out of Memory Error
 
 If you get the error  `Fatal error: Allowed memory size of 1610612736 bytes exhausted (tried to allocate 4096 bytes) in phar:///Users/$USER/composer.phar/src/Composer/DependencyResolver/RuleWatchGraph.php on line 52`  then run the following command, modifying as necessary for the location of Composer on your system (Linux/macOS).
-
 ```
 export COMPOSER_MEMORY_LIMIT=99999999999 && php -d memory_limit=-1 /Users/$USER/CU/composer.phar update
 ```
+To fix this error on macOS, navigate to `/usr/local/etc/php/8.0/php.ini` and set `memory_limit` to  `-1`.
