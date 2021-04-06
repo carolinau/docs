@@ -54,3 +54,18 @@ Once installed, `cd` to the enclosing directory where you would like to download
 ```
  httrack https://staging.catalog.carolinau.edu/ -W -O "2021-2022" -%v --robots=0
 ```
+
+## Modifications to HTTrack Files
+
+Unfortunately, the files as prepared by HTTrack are not ready for publication. Manual modifications are necessary in order to fully prepare it for publication. This list of fixes may not be comprehensive. The best way to fully prepare the static catalog for publication is to open up the website on your local machine and test key pages to make sure that everything behaves as expected. 
+
+### Fixing index.html
+At the bottom of the `index.html` file in the root catalog directory, there will be a line like `<script src="../cdn.jsdelivr.net...</script>`. The problem with this is that the dropdown menus in the sidebar will not work due to it being a local file, not a full URL to the internet resource. To find the correct script URL, go to another page that has the dropdown menus working and replace the line in `index.html` with the line from the other page.
+
+This same modification needs to be done at the top of the `index.html` file with the `bootstrap.min.css` and `drupal-bootstrap.min.css` files. Locate the full URLs for those stylesheets in a page that renders with all styles and copy those lines into the `index.html` file.
+
+### Fixing Course Codes
+HTTrack, in an attempt to simplify file names/URLs will remove words like "the" and "is" from the file names. This is a problem for course prefixes THE- and IS-. Thankfully, it is easy to fix. A text editor like [Atom](https://atom.io) works well for this purpose, thanks to its' advanced find and replace options.
+- Rename the files in the `catalog/course` directory to contain the correct prefix (can be determined by looking at the file contents or judging the range of course numbers used)
+- Update the links in `catalog/course-descriptions.html` to contain the correct prefixes
+- Update the links in any applicable program pages, for instance `catalog/program/master-arts/biblical-studies.html` and `catalog/program/bachelor-science/information-systems.html`
