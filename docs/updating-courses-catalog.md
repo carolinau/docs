@@ -15,10 +15,11 @@ CASE
             OR M.CRS_CDE LIKE 'MT%' OR M.CRS_CDE LIKE 'MV%' OR M.CRS_CDE LIKE 'MX%' OR M.CRS_CDE LIKE 'MN%' OR M.CRS_CDE LIKE 'MP%' OR M.CRS_CDE LIKE 'MM%')
     THEN 'This course is instrument and student specific.'
     WHEN M.CATALOG_TEXT IS NULL THEN 'No course description found.'
-ELSE M.CATALOG_TEXT END AS CATALOG_TEXT
+ELSE REPLACE(M.CATALOG_TEXT, CHAR(13)+CHAR(10), ' ') END AS CATALOG_TEXT
 FROM CATALOG_MASTER M
 LEFT JOIN PREREQ_ADV_TABLE P ON M.ADV_REQ_CDE=P.ADV_REQ_CDE
 WHERE ACTIVE_INACTIVE_ST='A' AND ORG_CDE='*LOCAL' AND CRS_CDE NOT IN ('REX  802', 'REX  877', 'REX  878', 'REX  879')
+
 ```
 
 Select all the contents, right click and select “Save Results As…” and save the file as `catalog_master.csv`
