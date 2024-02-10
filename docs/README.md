@@ -2,11 +2,10 @@
 > Welcome to the CU Website documentation site. This documentation serves as a comprehensive guide to maintaining and updating the websites.  
 
 ## Sites Overview
-The Carolina University websites are built using Drupal 8 running on Pantheon hosting. The Pantheon hosting account comprises of the following sites:
+The Carolina University websites are built using Drupal 10 running on Pantheon hosting. The Pantheon hosting account comprises of the following sites:
 
 - [carolinau.edu](https://carolinau.edu)
 - [catalog.carolinau.edu](https://catalog.carolinau.edu)
-- [hr.carolinau.edu](https://hr.carolinau.edu)
 - [e4.carolinau.edu](https://e4.carolinau.edu)
 - [leadership.carolinau.edu](https://leadership.carolinau.edu)
 - [education.carolinau.edu](https://education.carolinau.edu)

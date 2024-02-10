@@ -1,14 +1,13 @@
 # Regular Maintenance
-Regular maintenance is very important. Updating modules, themes, dependencies, and core ensures that the websites will remain secure and efficient. This section is broken down into two categories:
-- Custom upstream managed sites
-	- [hr.carolinau.edu](https://hr.carolinau.edu)
+Regular maintenance is crucial to the health and longevity of the sites. Updating modules, themes, dependencies, and Drupal core ensures that the websites will remain secure and efficient. The websites can be broken down into two main categories:
+- Custom Upstream Sites
 	- [e4.carolinau.edu](https://e4.carolinau.edu)
 	- [leadership.carolinau.edu](https://leadership.carolinau.edu)
 	- [education.carolinau.edu](https://education.carolinau.edu)
 	- [business.carolinau.edu](https://business.carolinau.edu)
 	- [divinity.carolinau.edu](https://divinity.carolinau.edu)
 	- [sas.carolinau.edu](https://sas.carolinau.edu)
-- Composer managed sites
+- Non-Custom Upstream Sites
 	- [carolinau.edu](https://carolinau.edu)
 	- [catalog.carolinau.edu](https://catalog.carolinau.edu)
 
@@ -23,184 +22,38 @@ A basic understanding of how these tools are used is also essential to the rest 
 ### Cloning Sites Locally
 To get started managing any site, you will need to clone it to your development environment. Pantheon provides an easy way to do this. On the Pantheon dashboard, find a site and copy the command found under the **Clone with Git** button. Paste this into your terminal to copy the specified site locally.
 
-## Custom Upstream Managed Sites
-All changes made to the custom upstream should not be done in an individual site. Rather, they should be performed in `cu-theme`.
+## Custom Upstream Sites
+All changes made to the custom upstream should not be done in an individual site. Rather, they should be performed in `cu-theme`. All the custom upstream sites pull their code from this single repository.
 
-To clone the `cu-theme` locally, navigate to the [carolinau/cu-theme](https://github.com/piedmontiu/cu-theme) GitHub repository and select the Clone button to clone it to your local machine.
+To clone the `cu-theme` locally, navigate to the [carolinau/cu-theme](https://github.com/piedmontiu/cu-theme) GitHub repository and select the Clone button to clone it to your local machine. Once it's cloned, you can start managing updates or making code updates to the theme.
 
-Once it has been cloned, navigate to the `cu-theme` directory. You’ll need to add Pantheon’s Upstream as a [remote](https://git-scm.com/docs/git-remote) in order to pull in core Drupal updates to the custom upstream repository. To check if it has already been added, simply run `git remote` in Terminal.
+## Updating Core, Modules, and Themes
+To get started with updating Drupal core, modules, and themes, ensure you have the `cu-theme` repository cloned to your local machine. Additionally, for the non-upstream sites (`carolina-university` and `cu-catalog`), ensure you've cloned those sites to your local machine using the "Clone with Git" button in the Pantheon dashboard for the dev environment.
 
-If the Pantheon remote has not been added, only `origin` will return. If that is the case, run this command to add Pantheon as a remote:
+All updates to the custom upstream managed sites get made directly to the `cu-theme` repository, not to the individual sites. `cu-catalog` and `carolina-university` are the exception where updates get made directly to those codebases.
 
-```
-git remote add pantheon-drops-8 git://github.com/pantheon-systems/drops-8.git
-```
+The main site, catalog site, and the custom upstream all use Composer to manage the project dependencies. Therefore, to install updates, the easiest thing to do is run `composer update`. This command will need to be run in the `carolina-university`, `cu-catalog`, and `cu-theme` directories on your local machine.
 
-You can check to see that it worked by again running `git remote`.
+You can update specific modules by running the command `composer update drupal/MODULE_NAME` if desired.
 
-This time, you’ll see:
-```
-origin
-pantheon-drops-8
-```
+Once updates have been implemented, and assuming no errors were thrown by Composer, commit and push all the changes. Deploy to a dev or test environment to test before running the deploy all script below.
 
-### Updating Modules and Themes
-To get started with updating modules and themes on custom upstream managed sites you will need to have cloned the `cu-theme`  locally to your development environment. All module and theme updates should be made to this git repo instead of the individual sites. Making changes to this repo will allow all the microsites to pull from the same codebase.
+TL;DR
+Run `composer update` in the `cu-theme`, `carolina-university`, and `cu-catalog` directories.
 
-When there is a module update, download the ZIP file from the Drupal.org website. Unzip the folder and drag it to `cu-theme/modules` to replace the existing folder for that module. The same process applies when installing a new module. For theme updates, download the ZIP file from Drupal.org, unzip the folder, and drag it to `cu-theme/themes/contrib`
+## Deploying Updates to All Sites
+The easiest way to deploy updates to all sites is by using a custom bash script. You'll need Terminus configured to use this script. Make sure you are logged into Terminus before running this as well.
+Before deploying to all sites, it is recommended to test the updates on the main website to ensure there are no breaking changes.
+- [Deploy All](https://webdocs.carolinau.edu/scripts/deployall.sh)
 
-### Updating Core
-All the custom upstream managed sites have a further upstream of Pantheon’s Drupal 8 git bucket. That is where core updates come from. To update core, run the following commands:
-```
-git fetch pantheon-drops-8
-git merge pantheon-drops-8/master
-```
-Do not attempt to copy in the official download from Drupal’s website. This will break Pantheon workflow functionality.
-
-Provided no updates happened when running those core updates, proceed to commit the changes.
-```
-git commit -m ‘Update core to latest version’
-```
-Then, push the changes to the `cu-theme` bucket using `git push`
-
-### Pulling Updates on Microsites
-*Applies to module, theme, and core updates.*
-You can run a Terminus command to automatically pull in the updates from the custom upstream and apply them to the dev environments of the respective sites. You will need the [Terminus Mass Update](https://github.com/pantheon-systems/terminus-mass-update) plugin to do so. To apply updates, run this command:
-```
-terminus site:list --format=list | terminus site:mass-update:apply
-```
-This will apply any pending updates in the custom upstream managed site dashboards and apply them to the dev environment. Test at least one of the sites in dev and test before deploying all changes to test and then to live.
-
-### Mass Deploying Updates
-*Applies to all Pantheon sites*
-You can run a Terminus mass update command to deploy updates from dev to test, and then from test to live. This requires the [Terminus Mass Run](https://github.com/jnettik/terminus-mass-run) plugin. This plugin needs to be installed to the `~/.terminus/plugins` folder.
-#### Deploy all updates to test
-```
-terminus site:list --format=list | terminus env:mass:deploy --env=test
-```
-#### Deploy all updates to live
-```
-terminus site:list --format=list | terminus env:mass:deploy --env=live
-```
-#### Clear code caches on all sites
-```
-terminus site:list --format=list | terminus site:mass:upstream:clear-cache
-```
-## Terminus Quick Commands
-### Scripts
-Download a .sh script that bundles each group below into a script for easy updates. These scripts can be used as an alternative to the Terminus Mass Run plugin, although the Terminus Mass Run plugin is a more efficient way.
-- [Dev to Test](https://webdocs.carolinau.edu/scripts/devtest.sh)
-- [Test to Live](https://webdocs.carolinau.edu/scripts/testlive.sh)
+## Other Scripts
+Here are some additional scripts to accomplish other common maintenance tasks.
 - [Clear Cache](https://webdocs.carolinau.edu/scripts/clearcache.sh)
 - [Run Cron](https://webdocs.carolinau.edu/scripts/runcron.sh)
 - [Open Status Report](https://webdocs.carolinau.edu/scripts/openstatusreport.sh)
 
-Download the script files to your desired directory. To make the files executable, run `chmod +x ./devtest.sh` and then to run it, enter `./devtest.sh`
-
-### Deploy from Dev to Test
-```
-terminus env:deploy carolina-university.test
-```
-```
-terminus env:deploy cu-catalog.test
-```
-```
-terminus env:deploy cu-human-resources.test
-```
-```
-terminus env:deploy e4.test
-```
-```
-terminus env:deploy john-wesley-school-of-leadership.test
-```
-```
-terminus env:deploy moore-school-of-education.test
-```
-```
-terminus env:deploy patterson-school-of-business.test
-```
-```
-terminus env:deploy piedmont-divinity-school.test
-```
-```
-terminus env:deploy school-of-arts-and-sciences.test
-```
-
-### Deploy from Test to Live
-```
-terminus env:deploy carolina-university.live
-```
-```
-terminus env:deploy cu-catalog.live
-```
-```
-terminus env:deploy cu-human-resources.live
-```
-```
-terminus env:deploy e4.live
-```
-```
-terminus env:deploy john-wesley-school-of-leadership.live
-```
-```
-terminus env:deploy moore-school-of-education.live
-```
-```
-terminus env:deploy patterson-school-of-business.live
-```
-```
-terminus env:deploy piedmont-divinity-school.live
-```
-```
-terminus env:deploy school-of-arts-and-sciences.live
-```
-### Clear Cache
-
-The clear cache Terminus command follows the pattern of
-`terminus env:clear-cache $site.$environment`
-
-```
-terminus env:clear-cache carolina-university.live
-```
-```
-terminus env:clear-cache cu-catalog.live
-```
-```
-terminus env:clear-cache cu-human-resources.live
-```
-```
-terminus env:clear-cache e4.live
-```
-```
-terminus env:clear-cache john-wesley-school-of-leadership.live
-```
-```
-terminus env:clear-cache moore-school-of-education.live
-```
-```
-terminus env:clear-cache patterson-school-of-business.live
-```
-```
-terminus env:clear-cache piedmont-divinity-school.live
-```
-```
-terminus env:clear-cache school-of-arts-and-sciences.live
-```
-
-## Composer Managed Sites
-Certain sites are managed with Composer in order to install modules with advanced features that require PHP dependencies.
-
-### Updating Modules and Themes
-To update modules, themes, and core, `cd` into the local site directory and install updates for a specific module using this command: `composer update drupal/MODULE_NAME`
-
-### Updating Core and Dependencies
-Run the following three commands to update Drupal Core and any PHP dependencies. If the first command does not work, simply run `composer update` and then complete the remainder of the commands.
-```
-composer update drupal/core --with-dependencies
-composer prepare-for-pantheon
-composer install --no-dev
-```
-Following this step, commit the changes and push them to the dev environment.
+Download the script files to your desired directory and execute them by running `bash deployall.sh` (for example).
+If the script is not executable, run `chmod +x ./deployall.sh` then try running the script again.
 
 ## Troubleshooting
 ### Out of Memory Error
